@@ -263,5 +263,14 @@ class Loader
                 'description' => 'Paginate users with offsets',
             ]
         );
+
+        register_graphql_field(
+            'CategoryToPostConnectionWhereArgs',
+            'offsetPagination',
+            [
+                'type' => 'OffsetPagination',
+                'description' => 'Paginate category posts with offsets',
+            ]
+        );
     }
 }
